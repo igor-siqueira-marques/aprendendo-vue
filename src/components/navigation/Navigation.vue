@@ -1,10 +1,10 @@
 <template>
   <v-navigation-drawer
-    color="purple darken-3"
-    dark
+    class="purple darken-3"
     v-model="drawer"
     :mini-variant.sync="mini"
     hide-overlay
+    dark
     stateless
   >
     <v-toolbar flat class="transparent">
