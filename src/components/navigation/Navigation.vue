@@ -1,5 +1,12 @@
 <template>
-  <v-navigation-drawer dark v-model="drawer" :mini-variant.sync="mini" hide-overlay stateless>
+  <v-navigation-drawer
+    color="purple darken-3"
+    dark
+    v-model="drawer"
+    :mini-variant.sync="mini"
+    hide-overlay
+    stateless
+  >
     <v-toolbar flat class="transparent">
       <v-list class="pa-0">
         <v-list-tile avatar>
@@ -23,7 +30,12 @@
     <v-list class="pt-0" dense>
       <v-divider></v-divider>
 
-      <v-list-tile v-for="item in items" :key="item.title" :to="'/' + item.path">
+      <v-list-tile
+        color="custom-color"
+        v-for="item in items"
+        :key="item.title"
+        :to="'/' + item.path"
+      >
         <v-list-tile-action>
           <v-icon>{{ item.icon }}</v-icon>
         </v-list-tile-action>
@@ -44,6 +56,7 @@ export default {
       items: [
         { title: "Home", icon: "dashboard", path: "home" },
         { title: "Portifólio", icon: "question_answer", path: "portifolio" },
+        { title: "Ações", icon: "present_to_all", path: "stocks" },
         { title: "Intenção", icon: "widgets", path: "intention" }
       ],
       mini: true,

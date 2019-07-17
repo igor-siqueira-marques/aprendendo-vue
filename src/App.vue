@@ -14,14 +14,20 @@
 <script>
 import Navigation from "@/components/navigation/Navigation.vue";
 export default {
-  components: { Navigation }
+  components: { Navigation },
+  created() {
+    this.$store.dispatch('initStock')
+  }
 };
 </script>
 
-<style>
+<style scoped>
 .container-menu{
 	display: flex;
 	height: 100%;
+}
+.container{
+  margin: 20px;
 }
 </style>
 
