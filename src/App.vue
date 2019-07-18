@@ -1,17 +1,15 @@
 <template>
   <v-app>
     <v-content>
+          <custom-header ></custom-header>
       <div class="container-menu">
         <div>
           <navigation></navigation>
         </div>
-        <div class="header">
-          <custom-header @toogleMenu="openMenu = !openMenu"></custom-header>
           <v-container>
             <router-view></router-view>
           </v-container>
         </div>
-      </div>
     </v-content>
   </v-app>
 </template>
