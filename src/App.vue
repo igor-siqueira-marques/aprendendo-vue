@@ -3,7 +3,7 @@
     <v-content>
       <div class="container-menu">
         <div>
-        <navigation></navigation>
+          <navigation></navigation>
         </div>
         <div class="header">
           <custom-header @toogleMenu="openMenu = !openMenu"></custom-header>
@@ -21,10 +21,10 @@ import Navigation from "@/components/navigation/Navigation.vue";
 import customHeader from "@/components/header/Header.vue";
 export default {
   components: { Navigation, customHeader },
-  data(){
+  data() {
     return {
       openMenu: false
-    }
+    };
   },
   created() {
     this.$store.dispatch("initStock");
@@ -42,7 +42,7 @@ export default {
 }
 .header {
   position: relative;
-  /* display: block; */
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
