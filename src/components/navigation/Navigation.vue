@@ -6,6 +6,9 @@
     hide-overlay
     dark
     stateless
+    fixed
+    app
+    disable-resize-watcher
   >
     <v-toolbar flat class="transparent">
       <v-list class="pa-0">
