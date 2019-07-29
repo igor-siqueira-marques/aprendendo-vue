@@ -20,6 +20,7 @@
           
         ></v-text-field>
         <v-btn 
+        small
         class="light-green lighten-1 white--text" 
         :disabled="!Number.isInteger(quantity) || quantity <= 0" 
         @click="sellStock">Vender</v-btn>

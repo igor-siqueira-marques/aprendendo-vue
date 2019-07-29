@@ -19,7 +19,11 @@
           v-model.number="quantity"
           
         ></v-text-field>
-        <v-btn class="purple darken-3 white--text" :disabled="!Number.isInteger(quantity) || quantity <= 0" @click="buyStock">Comprar</v-btn>
+        <v-btn 
+        small 
+        class="purple darken-3 white--text" 
+        :disabled="!Number.isInteger(quantity) || quantity <= 0" 
+        @click="buyStock">Comprar</v-btn>
       </v-container>
     </v-card>
   </v-flex>

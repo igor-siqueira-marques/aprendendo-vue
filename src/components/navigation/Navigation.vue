@@ -60,7 +60,8 @@ export default {
         { title: "Home", icon: "dashboard", path: "home" },
         { title: "Portifólio", icon: "question_answer", path: "portifolio" },
         { title: "Ações", icon: "present_to_all", path: "stocks" },
-        { title: "Intenção", icon: "widgets", path: "intention" }
+        { title: "Intenção", icon: "widgets", path: "intention" },
+        { title: "Conta", icon: "widgets", path: "conta" }
       ],
       mini: true,
       right: null

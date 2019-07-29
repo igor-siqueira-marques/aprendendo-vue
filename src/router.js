@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home.vue'
 import Stocks from '@/components/stocks/Stocks.vue'
 import Portifolio from '@/components/portifolio/Portifolio.vue'
+import Conta from '@/components/conta/Conta.vue'
 
 import Intention from '@/components/intention/Intention.vue'
 
@@ -28,6 +29,10 @@ export default new Router({
         {
             path: '/intention',
             component: Intention
+        },
+        {
+            path: '/conta',
+            component: Conta
         }
     ]
 
